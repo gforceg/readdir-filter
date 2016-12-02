@@ -1,5 +1,6 @@
 .vscode/
 *.js
+!tests/**/*.js
 *.d.ts
 *.js.map
 *.metadata.json
