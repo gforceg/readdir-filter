@@ -12,11 +12,6 @@ gulp.task('set build vars', () => {
   // fixme: separate this into 'set ignores' and append to .npmignore and .gitignore
 
 
-  //  dynamically set the files array in tsconfig-aot.json to point at the new barrel
-  config.aot_config.files = [barrelFilename];
-  config.aot_config.angularCompilerOptions.genDir = config.FACTORY_DIR;
-  fs.writeFileSync('tsconfig-aot.json', JSON.stringify(config.aot_config, null, '\t'));
-
   // update the .gitignore to ignore the OUT_DIR
   let gitignoreBuffer = String(fs.readFileSync('.gitignore')).split('\n');
   

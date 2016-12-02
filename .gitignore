@@ -12,8 +12,8 @@ node_modules/
 npm-debug.log*
 ngfactory/
 TODO.md
-ng2-base/
-!ng2-base/index.ts
-src/ng2-base*
-ng2-base.ts
+ts-base/
+!ts-base/index.ts
+src/ts-base*
+ts-base.ts
 bundles/

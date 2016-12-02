@@ -10,11 +10,10 @@ gulp.task('boosh', (done) => {
     'to-do',
     'set build vars',
     'make barrel',
-    'copy',
-    'sass',
-    'inline',
+    'copy temp',
+    // do stuff in .tmp/
+    'copy out',
     'compile',
-    'aot',
     'bundle',
     'remove temp',
     done
@@ -26,9 +25,9 @@ gulp.task('default', (done) => {
     'to-do',
     'set build vars',
     'make barrel',
-    'copy',
-    'sass',
-    'inline',
+    'copy temp',
+    // do stuff in .tmp/
+    'copy out',
     'compile',
     done
   );
