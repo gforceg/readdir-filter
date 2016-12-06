@@ -417,9 +417,9 @@ cucumber-tag-expressions@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cucumber-tag-expressions/-/cucumber-tag-expressions-1.0.0.tgz#5dc27ae3073acde1db3aa7cf4d9609a42f15ee5d"
 
-cucumber@^2.0.0-rc.1:
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/cucumber/-/cucumber-2.0.0-rc.1.tgz#e8d1354d567ff6260a6a13fda55a918119cc21d5"
+cucumber@^2.0.0-rc.2:
+  version "2.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/cucumber/-/cucumber-2.0.0-rc.2.tgz#831ad720a72c56353f03dfdc5279b4c0ab93b701"
   dependencies:
     babel-runtime "^6.11.6"
     bluebird "^3.4.1"
@@ -773,7 +773,7 @@ get-stdin@^5.0.1:
 
 gherkin@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gherkin/-/gherkin-4.0.0.tgz#79dce04d1223ea43b4862a76be5ce8f89c12c32c"
+  resolved "http://registry.npmjs.org/gherkin/-/gherkin-4.0.0.tgz#79dce04d1223ea43b4862a76be5ce8f89c12c32c"
 
 glob-base@^0.3.0:
   version "0.3.0"
