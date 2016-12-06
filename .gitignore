@@ -18,4 +18,4 @@ ts-base/
 src/ts-base*
 ts-base.ts
 bundles/
-features/**/ts-base*
+features/**/ts-base.feature
