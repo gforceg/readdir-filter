@@ -33,7 +33,7 @@
 	"dependencies": {},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/gforceg/ng2-base.git"
+		"url": "git+https://github.com/gforceg/ts-base.git"
 	},
 	"keywords": [
 		"angular2",
@@ -42,8 +42,8 @@
 		"boilerplate"
 	],
 	"bugs": {
-		"url": "https://github.com/gforceg/ng2-base/issues"
+		"url": "https://github.com/gforceg/ts-base/issues"
 	},
-	"homepage": "https://github.com/gforceg/ng2-base#readme",
+	"homepage": "https://github.com/gforceg/ts-base#readme",
 	"typings": "ts-base.d.ts"
 }
