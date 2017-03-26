@@ -1,7 +1,9 @@
-function the_world() {
+var {defineSupportCode} = require('cucumber');
 
+function CustomWorld() {
+  // this.x = y;
 }
 
-module.exports = function() {
-  this.World = the_world;
-}
+defineSupportCode(function({setWorldConstructor}) {
+  setWorldConstructor(CustomWorld)
+})
