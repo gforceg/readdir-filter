@@ -1,48 +1,48 @@
 {
-  "name": "readdir_filter",
-  "version": "1.0.0",
-  "description": "a base typescript project that uses gulp and cucumberjs",
-  "main": "bundles/readdir_filter.umd.js",
-  "scripts": {
-    "test": "cucumberjs"
-  },
-  "author": "Greg Hedin",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^6.0.46",
-    "cucumber": "^2.0.0-rc.9",
-    "del": "^2.2.2",
-    "es6-shim": "^0.35.1",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-cli": "^1.2.2",
-    "gulp-sourcemaps": "^2.2.0",
-    "gulp-todo": "^5.0.0",
-    "gulp-typescript": "^3.0.2",
-    "gulp-util": "^3.0.7",
-    "reflect-metadata": "^0.1.8",
-    "require-dir": "^0.3.1",
-    "rimraf": "^2.5.4",
-    "run-sequence": "^1.2.2",
-    "shasum": "^1.0.2",
-    "systemjs-builder": "^0.15.33",
-    "tslint": "^4.0.0",
-    "typescript": "^2.1.5"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gforceg/readdir_filter.git"
-  },
-  "keywords": [
-    "angular2",
-    "module",
-    "template",
-    "boilerplate"
-  ],
-  "bugs": {
-    "url": "https://github.com/gforceg/readdir_filter/issues"
-  },
-  "homepage": "https://github.com/gforceg/readdir_filter#readme",
-  "typings": "readdir_filter.d.ts"
+	"name": "readdir-filter",
+	"version": "1.0.0",
+	"description": "a base typescript project that uses gulp and cucumberjs",
+	"main": "bundles/readdir-filter.umd.js",
+	"scripts": {
+		"test": "cucumberjs"
+	},
+	"author": "Greg Hedin",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^6.0.46",
+		"cucumber": "^2.0.0-rc.9",
+		"del": "^2.2.2",
+		"es6-shim": "^0.35.1",
+		"gulp": "^3.9.1",
+		"gulp-clean": "^0.3.2",
+		"gulp-cli": "^1.2.2",
+		"gulp-sourcemaps": "^2.2.0",
+		"gulp-todo": "^5.0.0",
+		"gulp-typescript": "^3.0.2",
+		"gulp-util": "^3.0.7",
+		"reflect-metadata": "^0.1.8",
+		"require-dir": "^0.3.1",
+		"rimraf": "^2.5.4",
+		"run-sequence": "^1.2.2",
+		"shasum": "^1.0.2",
+		"systemjs-builder": "^0.15.33",
+		"tslint": "^4.0.0",
+		"typescript": "^2.1.5"
+	},
+	"dependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gforceg/readdir_filter.git"
+	},
+	"keywords": [
+		"angular2",
+		"module",
+		"template",
+		"boilerplate"
+	],
+	"bugs": {
+		"url": "https://github.com/gforceg/readdir_filter/issues"
+	},
+	"homepage": "https://github.com/gforceg/readdir_filter#readme",
+	"typings": "readdir-filter.d.ts"
 }
