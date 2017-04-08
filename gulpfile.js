@@ -34,6 +34,6 @@ gulp.task('default', (done) => {
   );
 });
 gulp.task('watch', (done) => {
-  gulp.watch('features/**/*.{js,feature}', 'test')
+  gulp.watch('features/**/*.{js,feature}', ['test'])
   gulp.watch('src/**/*.ts', ['default'])
 });
