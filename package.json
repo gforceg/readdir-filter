@@ -1,10 +1,10 @@
 {
-  "name": "ts-base",
+  "name": "readdir_filter",
   "version": "1.0.0",
   "description": "a base typescript project that uses gulp and cucumberjs",
-  "main": "bundles/ts-base.umd.js",
+  "main": "bundles/readdir_filter.umd.js",
   "scripts": {
-    "test": "node_modules/.bin/cucumberjs"
+    "test": "cucumberjs"
   },
   "author": "Greg Hedin",
   "license": "MIT",
@@ -32,7 +32,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gforceg/ts-base.git"
+    "url": "git+https://github.com/gforceg/readdir_filter.git"
   },
   "keywords": [
     "angular2",
@@ -41,8 +41,8 @@
     "boilerplate"
   ],
   "bugs": {
-    "url": "https://github.com/gforceg/ts-base/issues"
+    "url": "https://github.com/gforceg/readdir_filter/issues"
   },
-  "homepage": "https://github.com/gforceg/ts-base#readme",
-  "typings": "ts-base.d.ts"
+  "homepage": "https://github.com/gforceg/readdir_filter#readme",
+  "typings": "readdir_filter.d.ts"
 }
