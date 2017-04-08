@@ -29,10 +29,11 @@ gulp.task('default', (done) => {
     // do stuff in .tmp/
     'copy out',
     'compile',
+    'test',
     done
   );
-
-  gulp.task('watch', (done) => {
-
-  });
+});
+gulp.task('watch', (done) => {
+  gulp.watch('features/**/*.{js,feature}', 'test')
+  gulp.watch('src/**/*.ts', ['default'])
 });
