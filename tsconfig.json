@@ -17,8 +17,13 @@
       "dom"
     ]
   },
+  "include": [
+    "./index.ts"
+  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "features/**",
+    "gulp-tasks/**"
   ],
   "angularCompilerOptions": {
     "strictMetadataEmit": true

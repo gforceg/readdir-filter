@@ -7,7 +7,7 @@ let ts = require('gulp-typescript');
 let sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sourcemaps', ['tsc out folder'], () => {
-  return gulp.src(join(config.OUT_DIR, '**/*.js'))
+  return gulp.src(join(config.TMP_DIR, '**/*.js'))
   .pipe(sourcemaps.init())
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(config.OUT_DIR));
@@ -15,16 +15,16 @@ gulp.task('sourcemaps', ['tsc out folder'], () => {
 
 gulp.task('tsc out folder', () => {
 
-  return gulp.src(join(config.OUT_DIR, '**/*.ts'))
+  return gulp.src(join(config.TMP_DIR, '**/*.ts'))
   .pipe(ts(config.tsc_config.compilerOptions))
   .pipe(gulp.dest(config.OUT_DIR));
 });
 
-gulp.task('tsc root barrel', () => {
+// gulp.task('tsc root barrel', () => {
 
-  return gulp.src(join(process.cwd(), `${config.package_config.name}.ts`))
-  .pipe(ts(config.tsc_config.compilerOptions))
-  .pipe(gulp.dest(process.cwd()));
-});
+//   return gulp.src(join(process.cwd(), `${config.package_config.name}.ts`))
+//   .pipe(ts(config.tsc_config.compilerOptions))
+//   .pipe(gulp.dest(process.cwd()));
+// });
 
-gulp.task('compile', ['tsc out folder', 'tsc root barrel', 'sourcemaps'], () => { } );
+gulp.task('compile', ['tsc out folder', 'sourcemaps'], () => { } );

@@ -13,18 +13,18 @@ gulp.task('set build vars', () => {
 
 
   // update the .gitignore to ignore the OUT_DIR
-  let gitignoreBuffer = String(fs.readFileSync('.gitignore')).split('\n');
+  // let gitignoreBuffer = String(fs.readFileSync('.gitignore')).split('\n');
   
-  let already_ignored = false;
-  let out_dir_expr = new RegExp(`^${config.OUT_DIR}/`);
-  gitignoreBuffer.forEach((line) => {
-    if (out_dir_expr.test(line)) { already_ignored = true; }
-  });
+  // let already_ignored = false;
+  // let out_dir_expr = new RegExp(`^${config.OUT_DIR}/`);
+  // gitignoreBuffer.forEach((line) => {
+  //   if (out_dir_expr.test(line)) { already_ignored = true; }
+  // });
 
-  if (!already_ignored) { gitignoreBuffer.push(`${config.OUT_DIR}/`); }
+  // if (!already_ignored) { gitignoreBuffer.push(`${config.OUT_DIR}/`); }
 
-  gitignoreBuffer = gitignoreBuffer.join('\n');
-  fs.writeFileSync('.gitignore', gitignoreBuffer);
+  // gitignoreBuffer = gitignoreBuffer.join('\n');
+  // fs.writeFileSync('.gitignore', gitignoreBuffer);
 
   // update the "main" and "typings" dictionaries in package.json
   config.package_config.main = path.posix.join(`${config.BUNDLE_DIR}`, `${config.package_config.name}.umd.js`);
