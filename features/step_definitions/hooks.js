@@ -1,27 +1,29 @@
-let chalk = require('chalk');
-let child_process = require('child_process');
-// let config = require('../config/tasks-config.js');
+let chalk = require('chalk')
+let child_process = require('child_process')
+let { defineSupportCode } = require('cucumber')
+let readdirFilter = require('../../readdir-filter/readdir-filter').readdirFilter
 
-// module.exports = function () {
-//   /**
-//    * run a command in terminal
-//    */
-//   this.Given(/^that I execute "([^"]*)"$/, function (command, callback) {
-//     let y = child_process.execSync(command, 'utf8');
-//     console.log(chalk.red(y.toString('utf8')));
-//     callback(null);
-//   });
-// }
+defineSupportCode(function ({ After, Given, Then }) {
 
-let {defineSupportCode} = require('cucumber');
+  Given('all the {stringInDoubleQuotes} in tests that start with a {stringInDoubleQuotes}',
+    function (fso_type, prefixed_with, callback) {
 
-defineSupportCode(function ({After, Given, Then}) {
 
-  Given('that I execute a test', function (callback) {
-    callback(null);
-  });
+      if (this.expressions[prefixed_with == undefined])
+      throw 'the only options for arg2 are "alpha" or "number"'
+      if (this.fso_types[fso_type] == undefined)
+      throw 'the only options for arg1 are "file" or "folder"'
 
-  Then('the test should pass', function (callback) {
-    callback(null);
-  });
-});
+      let is_the_right_type = this.fso_types[fso_type]
+      let prefix = this.expressions[prefixed_with]
+
+      callback(null, 'pending');
+    });
+
+  Then('there should be \'{int}\' {stringInDoubleQuotes}',
+    function (fso_count, fso_type, callback) {
+      // Write code here that turns the phrase above into concrete actions
+      callback(null, 'pending');
+    });
+
+})
