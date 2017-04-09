@@ -7,7 +7,7 @@ let configs = {
   "bundle_config": bundle_config,
   "TMP_DIR": ".tmp",
   "IN_DIR": "src",
-  "OUT_DIR": `${pckg.name}`,
+  "OUT_DIR": `./`,
   "CONFIG_DIR": "config",
   "BUNDLE_DIR": "bundles",
   "ts_and_js_files_excluded_from_cleaning": [
@@ -17,3 +17,7 @@ let configs = {
 }
 
 module.exports = configs;
+
+//# sourceMappingURL=tasks-config.js.map
+
+//# sourceMappingURL=tasks-config.js.map
