@@ -20,4 +20,5 @@ ts-base.ts
 bundles/
 features/**/ts-base.feature
 
-readdir-filter/
+readdir-filter
+tests/**
