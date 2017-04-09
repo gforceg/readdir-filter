@@ -1,6 +1,7 @@
 var { defineSupportCode } = require('cucumber');
 
 function CustomWorld() {
+
   this.expressions = {
     alpha: /^[a-z]/,
     number: /^[0-9]/
@@ -10,6 +11,8 @@ function CustomWorld() {
     folders: 'isDirectory',
     files: 'isFile'
   }
+
+  this.objects = []
 }
 
 defineSupportCode(function ({ setWorldConstructor }) {
