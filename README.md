@@ -20,7 +20,7 @@ readdirFilter(some_path, ()
 javascript usage:
 ```javascript
 
-const readdirFilter = require('readdir-filter').readdirFilter
+const readdirFilter = require('readdir-filter').default
 readdirFilter('tests/', (
   (fso_name, stats) =>
     fso_name.match(/^[a-z]i/) // starts with an alpha

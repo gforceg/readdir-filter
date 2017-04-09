@@ -2,8 +2,7 @@ const assert = require('assert')
 const chalk = require('chalk')
 const child_process = require('child_process')
 const { defineSupportCode } = require('cucumber')
-const readdirFilter = require('../../readdir-filter/readdir-filter').readdirFilter
-
+const readdirFilter = require('../../readdir-filter/index').default
 defineSupportCode(function ({ After, Given, Then }) {
 
   Given('all the {stringInDoubleQuotes} in tests that start with a {stringInDoubleQuotes}',

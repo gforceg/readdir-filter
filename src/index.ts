@@ -1,1 +1,1 @@
-export { readdirFilter} from './readdir-filter'
+export * from './readdir-filter'

@@ -2,7 +2,7 @@ import * as path from 'path'
 const join = path.join
 import * as fs from 'fs'
 
-export function readdirFilter(dir_path: string, condition?: (fso_name: string, stats: fs.Stats) => boolean): Promise<string[]> {
+export default function readdirFilter(dir_path: string, condition?: (fso_name: string, stats: fs.Stats) => boolean): Promise<string[]> {
   return new Promise<string[]>((resolve, reject) => {
     let counter = 0
     let matches: string[] = []
