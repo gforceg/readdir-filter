@@ -10,16 +10,18 @@ defineSupportCode(function ({ After, Given, Then }) {
     function (fso_type, prefixed_with, callback) {
 
       if (this.expressions[prefixed_with == undefined])
-      throw 'the only options for arg2 are "alpha" or "number"'
+        throw 'the only options for arg2 are "alpha" or "number"'
       if (this.fso_types[fso_type] == undefined)
-      throw 'the only options for arg1 are "file" or "folder"'
+        throw 'the only options for arg1 are "file" or "folder"'
 
       let is_the_right_type = this.fso_types[fso_type]
       let prefix = this.expressions[prefixed_with]
-      readdirFilter('tests/', ( (fso_name, stats) => fso_name.match(prefix) && stats[is_the_right_type]())).then( (files_arr) => {
-        this.objects = files_arr
-        callback()
-      }, (ex) => { throw ex})
+      readdirFilter('tests/', (
+        (fso_name, stats) => fso_name.match(prefix)
+          && stats[is_the_right_type]())).then((files_arr) => {
+            this.objects = files_arr
+            callback()
+          }, (ex) => { throw ex })
     });
 
   Then('there should be \'{int}\' objects',

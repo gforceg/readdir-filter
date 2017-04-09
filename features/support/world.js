@@ -3,7 +3,7 @@ var { defineSupportCode } = require('cucumber');
 function CustomWorld() {
 
   this.expressions = {
-    alpha: /^[a-z]/,
+    alpha: /^[a-z]/i,
     number: /^[0-9]/
   }
 
