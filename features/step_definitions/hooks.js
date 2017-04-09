@@ -18,10 +18,11 @@ defineSupportCode(function ({ After, Given, Then }) {
       let prefix = this.expressions[prefixed_with]
       readdirFilter('tests/', (
         (fso_name, stats) => fso_name.match(prefix)
-          && stats[is_the_right_type]())).then((files_arr) => {
-            this.objects = files_arr
-            callback()
-          }, (ex) => { throw ex })
+          && stats[is_the_right_type]()))
+        .then((files_arr) => {
+          this.objects = files_arr
+          callback()
+        }, (ex) => { throw ex })
     });
 
   Then('there should be \'{int}\' objects',
