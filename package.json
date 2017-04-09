@@ -1,6 +1,6 @@
 {
 	"name": "readdir-filter",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "a base typescript project that uses gulp and cucumberjs",
 	"main": "bundles/readdir-filter.umd.js",
 	"scripts": {
