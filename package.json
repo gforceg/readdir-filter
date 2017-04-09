@@ -32,7 +32,7 @@
 	"dependencies": {},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/gforceg/readdir_filter.git"
+		"url": "git+https://github.com/gforceg/readdir-filter.git"
 	},
 	"keywords": [
 		"angular2",
@@ -41,8 +41,8 @@
 		"boilerplate"
 	],
 	"bugs": {
-		"url": "https://github.com/gforceg/readdir_filter/issues"
+		"url": "https://github.com/gforceg/readdir-filter/issues"
 	},
-	"homepage": "https://github.com/gforceg/readdir_filter#readme",
+	"homepage": "https://github.com/gforceg/readdir-filter#readme",
 	"typings": "readdir-filter.d.ts"
 }
