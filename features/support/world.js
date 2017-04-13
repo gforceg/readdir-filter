@@ -1,6 +1,5 @@
 var { defineSupportCode } = require('cucumber')
 const readdirFilter = require('../../index').default
-// const assert = require('assert')
 
 function CustomWorld () {
   this.objects = []
