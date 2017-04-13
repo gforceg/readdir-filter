@@ -23,11 +23,6 @@ function CustomWorld () {
   this.starts_with
   this.ends_with
 
-  // this.validate_starts_with_expression = () => {
-  //   if (this.starts_with_expressions[this.starts_with_expr] == undefined)
-  //     throw 'the only options for arg2 are: ' + Object.getOwnPropertyNames(this.starts_with_expressions)
-  // }
-
   this.validate_expression = (dict, e) => {
     if (dict === undefined) {
       throw new Error('not a valid dict' + dict)
