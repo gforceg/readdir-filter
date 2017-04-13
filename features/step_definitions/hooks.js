@@ -1,33 +1,33 @@
 const assert = require('assert')
-const chalk = require('chalk')
-const child_process = require('child_process')
+// const chalk = require('chalk')
+// const child_process = require('child_process')
 const { defineSupportCode } = require('cucumber')
 const readdirFilter = require('../../index').default
+
 defineSupportCode(function ({ After, Given, Then }) {
-
   Given('all the {stringInDoubleQuotes} in tests that start with a {stringInDoubleQuotes}',
-    function (fso_type, prefixed_with, callback) {
+    function (fsoType, expr, callback) {
+      this.fso_type = fsoType
+      this.starts_with_expr = expr
 
-      if (this.expressions[prefixed_with == undefined])
-        throw 'the only options for arg2 are "alpha" or "number"'
-      if (this.fso_types[fso_type] == undefined)
-        throw 'the only options for arg1 are "file" or "folder"'
-
-      let is_the_right_type = this.fso_types[fso_type]
-      let prefix = this.expressions[prefixed_with]
-      readdirFilter('tests/', (
-        (fso_name, stats) => fso_name.match(prefix)
-          && stats[is_the_right_type]()))
-        .then((files_arr) => {
-          this.objects = files_arr
+      readdirFilter('tests/', this.starts_with_filter)
+        .then((filesArr) => {
+          this.objects = filesArr
           callback()
         }, (ex) => { throw ex })
-    });
+    })
+
+  Given('all the {stringInDoubleQuotes} in tests that end with {stringInDoubleQuotes}',
+    function (fsoType, expr, callback) {
+      // Write code here that turns the phrase above into concrete actions
+      callback(null, 'pending')
+    })
 
   Then('there should be \'{int}\' objects',
-    function (fso_count, callback) {
-      assert(this.objects.length == fso_count)
+    function (fsoCount, callback) {
+      console.dir(fsoCount)
+      console.dir(this.objects.length)
+      assert(this.objects.length === fsoCount)
       callback()
-    });
-
+    })
 })
