@@ -1,8 +1,12 @@
 Feature: I want to safely retrieve a series of files and/or directories using asynchronously.
 and I want to specify a filter function as an argument
 
-  Scenario: return 0 folders
+  Scenario: return 1 file
   Given all the "files" in tests that end with ".txt"
+  Then there should be '1' objects
+
+  Scenario: return 0 files
+  Given all the "files" in tests that end with ".zip"
   Then there should be '0' objects
 
   Scenario: return all folders that start with an alpha

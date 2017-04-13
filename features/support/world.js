@@ -11,7 +11,8 @@ function CustomWorld () {
   }
 
   this.ends_with_expressions = {
-    '.txt': /\.txt$/i
+    '.txt': /\.txt$/i,
+    '.zip': /\.zip$/i
   }
 
   this.fso_types = {
@@ -50,7 +51,7 @@ function CustomWorld () {
   this.ends_with_filter = (fsoName, stats) => {
     this.validate_expression(this.ends_with_expressions, this.ends_with_expr)
     this.validate_fso_type()
-    return fsoName.match(this.starts_with_expressions[this.starts_with_expr]) && stats[this.fso_types[this.fso_type]]()
+    return fsoName.match(this.ends_with_expressions[this.ends_with_expr]) && stats[this.fso_types[this.fso_type]]()
   }
 
   this.filter_objects = (filter, callback) => {
